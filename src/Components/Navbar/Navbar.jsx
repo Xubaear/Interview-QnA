@@ -1,10 +1,11 @@
 import React from 'react';
 
+
 const Navbar = () => {
     return (
-        <div className='bg-glass'>
+        <div>
 
-  <div className='flex justify-between items-center px-10 pt-4'>
+  <div className='flex justify-between items-center px-10 pt-4 py-3'>
     {/* Name */}
 <button class="button" data-text="Awesome">
     <span class="actual-text">&nbsp;Interview Q & A&nbsp;</span>

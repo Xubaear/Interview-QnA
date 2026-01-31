@@ -1,0 +1,89 @@
+.banner-btn {
+  position: relative;
+ 
+  min-width: 380px; 
+  height: 120px;
+  outline: none;
+  transition: 0.1s;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ddebf0;
+  z-index: 1;
+}
+
+#clip {
+  --color: #2761c3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 5px double var(--color);
+  box-shadow: inset 0px 0px 25px #195480;
+  -webkit-clip-path: polygon(15% 0%, 85% 0%, 100% 30%, 100% 70%, 85% 100%, 15% 100%, 0% 70%, 0% 30%);
+  z-index: -1;
+}
+
+.arrow {
+  position: absolute;
+  transition: 0.3s;
+  background-color: #2761c3;
+  top: 42%;
+  width: 40px;
+  height: 30px;
+}
+
+#leftArrow {
+  left: -50px;
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 50%);
+}
+
+#rightArrow {
+  left: 100%;
+  margin-left: 10px;
+  -webkit-clip-path: polygon(100% 49%, 0 0, 0 100%);
+}
+
+.banner-btn:hover #rightArrow {
+  background-color: #27c39f;
+  left: -60px;
+  animation: rightArrow8 0.6s ease-in-out infinite alternate;
+}
+
+.banner-btn:hover #leftArrow {
+  background-color: #27c39f;
+  left: 102%;
+  animation: leftArrow8 0.6s ease-in-out infinite alternate;
+}
+
+.corner {
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  background-color: #2761c3;
+  box-shadow: inset 1px 1px 8px #2781c3;
+  transform: rotate(45deg);
+  transition: 0.2s;
+}
+
+#rightTop { top: -2rem; right: 10%; }
+#leftTop { top: -2rem; left: 10%; }
+#leftBottom { bottom: -2rem; left: 10%; }
+#rightBottom { bottom: -2rem; right: 10%; }
+
+.banner-btn:hover .corner {
+  background-color: #27c39f;
+  transform: scale(1.2) rotate(45deg);
+}
+
+.banner-btn:hover #clip {
+  --color: #27c39f;
+  box-shadow: inset 0px 0px 50px #27c39f;
+}
+
+@keyframes leftArrow8 { to { transform: translateX(15px); } }
+@keyframes rightArrow8 { to { transform: translateX(-15px); } }
