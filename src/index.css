@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
+.rubik-dirt-regular {
+  font-family: "Rubik Dirt", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 /* Name */
 
 .button {
@@ -129,11 +137,11 @@
   left: 5px;
   filter: blur(20px);
   opacity: 0.8;
-  //animation:leftright 4s ease-in infinite;
+  animation:leftright 4s ease-in infinite;
   transition: all 2s;
 }
 #main:hover > #pink-mask {
-  //animation: rotate 4s linear infinite;
+  animation: rotate 4s linear infinite;
   opacity: 0;
 }
 
@@ -165,7 +173,7 @@
     #dfa2da,
     rgba(0, 0, 0, 0) 58%
   );
-  //  animation: rotate 4s linear infinite;
+    animation: rotate 4s linear infinite;
   transition: all 2s;
 }
 .border {
@@ -195,7 +203,7 @@
     #cf30aa 60%,
     #1c191c 64%
   );
-  // animation: rotate 4s 0.1s linear infinite;
+  animation: rotate 4s 0.1s linear infinite;
   transition: all 2s;
 }
 .darkBorderBg {
@@ -296,7 +304,7 @@
     #000 87%
   );
   /* change speed here */
-  //animation: rotate 4s 0.3s linear infinite;
+  animation: rotate 4s 0.3s linear infinite;
   transition: all 2s;
 }
 
@@ -387,3 +395,7 @@
   left: 20px;
   top: 15px;
 }
+
+
+
+

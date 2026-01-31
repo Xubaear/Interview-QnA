@@ -1,11 +1,12 @@
 import React from "react";
 import "./banner.css";
 
+
 const Banner = () => {
   return (
     <div className="flex items-center justify-center min-h-[50vh] "> 
       <button className="banner-btn -mt-20">
-        <span className="text-4xl font-bold uppercase tracking-widest relative z-10">
+        <span className="rubik-dirt-regular text-3xl font-bold uppercase tracking-widest relative z-10">
           BackPack
         </span>
         <div id="clip">
@@ -17,6 +18,9 @@ const Banner = () => {
         <span id="rightArrow" className="arrow"></span>
         <span id="leftArrow" className="arrow"></span>
       </button>
+
+
+      
     </div>
   );
 };

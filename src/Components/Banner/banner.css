@@ -1,8 +1,8 @@
 .banner-btn {
   position: relative;
  
-  min-width: 380px; 
-  height: 120px;
+  min-width: 350px; 
+  height: 110px;
   outline: none;
   transition: 0.1s;
   background-color: transparent;

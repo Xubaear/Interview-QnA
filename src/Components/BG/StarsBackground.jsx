@@ -1,9 +1,15 @@
-import "./StarsBackground.css";
-
+import React from 'react';
+import "./StarsBackground.css"
 const StarsBackground = () => {
   return (
-    <div className="container">
-      <div id="stars"></div>
+    <div>
+      <div className="container max-w-full">
+  <div id="stars"></div>
+  <div id="stars2"></div>
+  <div id="stars3"></div>
+  <div></div>
+</div>
+
     </div>
   );
 };
